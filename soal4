@@ -1,0 +1,39 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    char o;
+    int angka1, angka2;
+
+    cout << "kalkulator" << endl;
+    cout<<"Masukkan angka pertama  : ";
+    cin>>angka1;
+    cout<<"Operator                : ";
+    cin>>o;
+    cout<<"Masukkan angka kedua    : ";
+    cin>>angka2;
+    cout<<endl<<endl;
+    cout<<"Hasilnya adalah         : ";
+
+    switch(o)
+    {
+    case '+':
+        cout<<angka1+angka2;
+        break;
+    case '-':
+        cout<<angka1-angka2;
+        break;
+    case '*':
+        cout<<angka1*angka2;
+        break;
+    case '/':
+        cout<<angka1/angka2;
+        break;
+    default:
+        cout<<"Error";
+        break;
+    }
+    return 0;
+}
